@@ -10,6 +10,15 @@
 </head>
 
 <body>
+    <div class="topnav" id="myTopnav">
+  <a href="#home" class="active">Home</a>
+  <a href="#about">About</a>
+  <a href="#contact">Contact</a>
+  <a href="#projects">Projects</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
 
     <!--Header Showcase-->
     <header id="showcase" class="active">
@@ -118,5 +127,16 @@ sector. I believe that robotics is the future of surgery and would love to be a 
            <h2>By Nthabiseng Rose Tleane</h2>
         </div>
     </footer>
+
+    <script>
+        function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+    </script>
 </body>
 </html>
